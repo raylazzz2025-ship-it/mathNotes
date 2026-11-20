@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f8fc" />
+  <meta name="description" content="Un espace de travail pour écrire des notes et du code mathématique." />
+  <title>MathNotes</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="MathNotes, accueil">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M5 5.75A1.75 1.75 0 0 1 6.75 4h11.5A1.75 1.75 0 0 1 20 5.75v12.5A1.75 1.75 0 0 1 18.25 20H6.75A1.75 1.75 0 0 1 5 18.25V5.75Z"
+              stroke="currentColor" stroke-width="1.7" />
+            <path d="M9 8h7M9 12h2m4 0h1m-7 4h7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+          </svg>
+        </span>
+        <span class="brand-name">MathNotes</span>
+      </a>
+
+      <div class="project-name">
+        <span class="project-label">PROJET</span>
+        <span class="project-title">Algèbre linéaire</span>
+        <span class="project-dot" aria-hidden="true"></span>
+      </div>
+
+      <div class="topbar-actions">
+        <span class="save-status"><span class="save-indicator" id="save-indicator"></span><span
+            id="save-status-label">Prêt</span></span>
+      </div>
+    </header>
+
+    <main class="workspace" aria-label="Espace de travail MathNotes">
+      <section class="pane notes-pane" aria-labelledby="notes-heading">
+        <div class="pane-header">
+          <div class="pane-title-group">
+            <span class="pane-icon notes-icon" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M5.25 3.75h9.5A1.25 1.25 0 0 1 16 5v10a1.25 1.25 0 0 1-1.25 1.25h-9.5A1.25 1.25 0 0 1 4 15V5a1.25 1.25 0 0 1 1.25-1.25Z"
+                  stroke="currentColor" stroke-width="1.5" />
+                <path d="M7 7h6m-6 3h6m-6 3h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </span>
+            <h1 id="notes-heading">Notes</h1>
+          </div>
+          <div class="pane-tools">
+            <span class="word-count">Markdown</span>
+            <button class="icon-button" type="button" aria-label="Options des notes">
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <circle cx="4" cy="10" r="1.25" />
+                <circle cx="10" cy="10" r="1.25" />
+                <circle cx="16" cy="10" r="1.25" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="notes-content">
+          <div class="document-meta">
+            <span class="subject-tag"><span></span> MATHÉMATIQUES</span>
+            <span class="updated-date">Mis à jour aujourd'hui</span>
+          </div>
+          <article class="note-document">
+            <canvas id="note-canvas"></canvas>
+          </article>
+          <div class="notes-footer">
+            <span><span class="keyboard-hint">⌘</span> + <span class="keyboard-hint">↵</span> pour ajouter un
+              bloc</span>
+            <span>1 min de lecture</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="pane-divider" aria-hidden="true">
+        <span></span>
+      </div>
+
+      <section class="pane code-pane" aria-labelledby="code-heading">
+        <div class="pane-header">
+          <div class="pane-title-group">
+            <span class="pane-icon code-icon" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="none">
+                <path d="m7 6-4 4 4 4m6-8 4 4-4 4m-1.25-9-3.5 10" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <h2 id="code-heading">Code</h2>
+            <span class="language-badge">Python</span>
+          </div>
+          <div class="pane-tools">
+            <button class="run-button" type="button" aria-label="Exécution bientôt disponible"
+              title="L'exécution du code n'est pas encore implémentée" disabled>
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="m5.5 3.75 6 4.25-6 4.25V3.75Z" fill="currentColor" />
+              </svg>
+              <span>Exécuter</span>
+            </button>
+            <button class="icon-button code-menu-button" type="button" aria-label="Options du code">
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <circle cx="4" cy="10" r="1.25" />
+                <circle cx="10" cy="10" r="1.25" />
+                <circle cx="16" cy="10" r="1.25" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="editor-toolbar">
+          <div class="file-tab">
+            <span class="python-icon">Math</span>
+            <span>untitled.mth</span>
+            <span class="file-unsaved" id="file-unsaved" aria-label="Modifications non enregistrées"></span>
+          </div>
+          <span class="editor-toolbar-label">ÉDITEUR</span>
+        </div>
+
+        <div class="editor-shell" aria-label="Éditeur Monaco, Python">
+          <div id="monaco-editor" class="monaco-mount"></div>
+        </div>
+
+        <footer class="editor-statusbar">
+          <span class="statusbar-left"><span class="status-dot"></span>Prêt</span>
+          <div class="statusbar-right">
+            <span>Python</span>
+            <span>UTF-8</span>
+            <span id="cursor-status">Ln 1, Col 1</span>
+            <span class="statusbar-settings" aria-label="Paramètres">
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M8 5.75a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z" stroke="currentColor"
+                  stroke-width="1.2" />
+                <path
+                  d="m13.25 9.18 1.02.8-1 1.73-1.22-.45a5.6 5.6 0 0 1-1.26.73l-.2 1.28H7.4l-.2-1.28a5.6 5.6 0 0 1-1.26-.73l-1.22.45-1-1.73 1.02-.8a5.8 5.8 0 0 1 0-1.46l-1.02-.8 1-1.73 1.22.45a5.6 5.6 0 0 1 1.26-.73l.2-1.28h3.18l.2 1.28a5.6 5.6 0 0 1 1.26.73l1.22-.45 1 1.73-1.02.8a5.8 5.8 0 0 1 0 1.46Z"
+                  stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </div>
+        </footer>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="/src/ts/main.ts"></script>
+</body>
+
+</html>

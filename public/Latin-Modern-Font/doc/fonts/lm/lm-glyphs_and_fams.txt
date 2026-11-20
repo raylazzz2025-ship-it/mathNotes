@@ -1,0 +1,923 @@
+THIS FILE REFERS TO THE OTF GLYPH NAMES
+
+CONTENTS:
+  I. Glyphs with no Unicode assigned
+ II. Glyphs with a Unicode slot assigned
+III. Differences in the repertoire of glyphs
+ IV. GROUPING INTO SUBFAMILIES
+
+==================================
+I. GLYPHS WITH NO UNICODE ASSIGNED
+==================================
+001 .notdef
+002 acute.cap
+003 acute.dup
+004 acute.ts1
+005 AE.dup
+006 ae.dup
+007 Aogonekacute
+008 aogonekacute
+009 asciitilde.low
+010 breve.cap
+011 breve.ts1
+012 caron.cap
+013 caron.ts1
+014 cedilla.dup
+015 cent.oldstyle
+016 circumflex.cap
+017 circumflex.dup
+018 copyleft
+019 copyright.bas
+020 cwm
+021 cwmascender
+022 cwmcapital
+023 dblgrave.ts1
+024 died
+025 dieresis.cap
+026 dieresis.dup
+027 dieresis.ts1
+028 dollar.oldstyle
+029 dotaccent.alt
+030 dotaccent.cap
+031 dotlessj.dup
+032 eight.oldstyle
+033 eight.prop
+034 eight.taboldstyle
+035 emdash.alt
+036 Eogonekacute
+037 eogonekacute
+038 f_k
+039 five.oldstyle
+040 five.prop
+041 five.taboldstyle
+042 four.oldstyle
+043 four.prop
+044 four.taboldstyle
+045 fraction.alt
+046 Gcedilla
+047 gcedilla
+048 germandbls.dup
+049 grave.cap
+050 grave.ts1
+051 H_uni0303
+052 h_uni0303
+053 hungarumlaut.cap
+054 hungarumlaut.ts1
+055 hyphen.alt
+056 hyphen.dup
+057 hyphen.prop
+058 hyphendbl.alt
+059 I.alt
+060 I_J.alt
+061 Imacron.alt
+062 imacron.alt
+063 Iogonek.alt
+064 Iogonekacute
+065 iogonekacute
+066 J_uni030C
+067 Jacute
+068 jacute
+069 Kcedilla
+070 kcedilla
+071 L_uni0303
+072 l_uni0303
+073 Lcedilla
+074 lcedilla
+075 leaf
+076 macron.alt
+077 macron.cap
+078 macron.cap.alt
+079 macron.dup
+080 macron.ts1
+081 Ncedilla
+082 ncedilla
+083 nine.oldstyle
+084 nine.prop
+085 nine.taboldstyle
+086 OE.dup
+087 oe.dup
+088 one.oldstyle
+089 one.prop
+090 one.taboldstyle
+091 Oogonekacute
+092 oogonekacute
+093 Orogate
+094 orogate
+095 Oslash.dup
+096 oslash.dup
+097 paragraph.alt
+098 perthousandzero
+099 quotedblbase.cm
+100 quotedblbase.cs
+101 quotedblbase.ts1
+102 quotedblleft.cm
+103 quotedblright.cm
+104 quotedblright.cs
+105 quoteleft.dup
+106 quoteright.dup
+107 quotesinglbase.ts1
+108 quotesingle.ts1
+109 Rcedilla
+110 rcedilla
+111 registered.alt
+112 registered.bas
+113 ring.cap
+114 S_S
+115 seven.oldstyle
+116 seven.prop
+117 seven.taboldstyle
+118 six.oldstyle
+119 six.prop
+120 six.taboldstyle
+121 space_uni0302_uni0300
+122 space_uni0302_uni0300.cap
+123 space_uni0302_uni0301
+124 space_uni0302_uni0301.cap
+125 space_uni0302_uni0303
+126 space_uni0302_uni0303.cap
+127 space_uni0302_uni0309
+128 space_uni0302_uni0309.cap
+129 space_uni0306_uni0300
+130 space_uni0306_uni0300.cap
+131 space_uni0306_uni0301
+132 space_uni0306_uni0301.cap
+133 space_uni0306_uni0303
+134 space_uni0306_uni0303.cap
+135 space_uni0306_uni0309
+136 space_uni0306_uni0309.cap
+137 space_uni0308_uni0300
+138 space_uni0308_uni0300.cap
+139 space_uni0308_uni0301
+140 space_uni0308_uni0301.cap
+141 space_uni0308_uni030C
+142 space_uni0308_uni030C.cap
+143 space_uni0309
+144 space_uni0309.cap
+145 space_uni030A_uni0301
+146 space_uni030A_uni0301.cap
+147 space_uni030F
+148 space_uni030F.cap
+149 space_uni0311
+150 space_uni0311.cap
+151 space_uni0323
+152 space_uni0326
+153 space_uni032E
+154 space_uni032F
+155 space_uni0330
+156 space_uni0331
+157 space_uni0332
+158 star.alt
+159 suppress
+160 T_uni0303
+161 t_uni0303
+162 T_uni0308
+163 three.oldstyle
+164 three.prop
+165 three.taboldstyle
+166 threequartersemdash
+167 tieaccentcapital
+168 tieaccentcapital.new
+169 tieaccentlowercase.new
+170 tilde.cap
+171 tilde.dup
+172 two.oldstyle
+173 two.prop
+174 two.taboldstyle
+175 U_uni032F
+176 u_uni032F
+177 uni0300.cap
+178 uni0301.cap
+179 uni0302.cap
+180 uni0303.cap
+181 uni0304.cap
+182 uni0306.cap
+183 uni0307.cap
+184 uni0308.cap
+185 uni0309.cap
+186 uni030A.cap
+187 uni030B.cap
+188 uni030C.cap
+189 uni030F.cap
+190 uni0311.cap
+191 zero.oldstyle
+192 zero.prop
+193 zero.slash
+194 zero.taboldstyle
+
+=======================================
+II. GLYPHS WITH A UNICODE SLOT ASSIGNED
+=======================================
+001 A                     U+0041
+002 a                     U+0061
+003 Aacute                U+00C1
+004 aacute                U+00E1
+005 Abreve                U+0102
+006 abreve                U+0103
+007 Abreveacute           U+1EAE
+008 abreveacute           U+1EAF
+009 Abrevedotbelow        U+1EB6
+010 abrevedotbelow        U+1EB7
+011 Abrevegrave           U+1EB0
+012 abrevegrave           U+1EB1
+013 Abrevehookabove       U+1EB2
+014 abrevehookabove       U+1EB3
+015 Abrevetilde           U+1EB4
+016 abrevetilde           U+1EB5
+017 Acaron                U+01CD
+018 acaron                U+01CE
+019 Acircumflex           U+00C2
+020 acircumflex           U+00E2
+021 Acircumflexacute      U+1EA4
+022 acircumflexacute      U+1EA5
+023 Acircumflexdotbelow   U+1EAC
+024 acircumflexdotbelow   U+1EAD
+025 Acircumflexgrave      U+1EA6
+026 acircumflexgrave      U+1EA7
+027 Acircumflexhookabove  U+1EA8
+028 acircumflexhookabove  U+1EA9
+029 Acircumflextilde      U+1EAA
+030 acircumflextilde      U+1EAB
+031 acute                 U+00B4
+032 Adblgrave             U+0200
+033 adblgrave             U+0201
+034 Adieresis             U+00C4
+035 adieresis             U+00E4
+036 Adotbelow             U+1EA0
+037 adotbelow             U+1EA1
+038 AE                    U+00C6
+039 ae                    U+00E6
+040 AEacute               U+01FC
+041 aeacute               U+01FD
+042 Agrave                U+00C0
+043 agrave                U+00E0
+044 Ahookabove            U+1EA2
+045 ahookabove            U+1EA3
+046 Alpha                 U+0391
+047 Amacron               U+0100
+048 amacron               U+0101
+049 ampersand             U+0026
+050 angleleft             U+2329
+051 angleright            U+232A
+052 Aogonek               U+0104
+053 aogonek               U+0105
+054 Aring                 U+00C5
+055 aring                 U+00E5
+056 Aringacute            U+01FA
+057 aringacute            U+01FB
+058 arrowdown             U+2193
+059 arrowleft             U+2190
+060 arrowright            U+2192
+061 arrowup               U+2191
+062 asciicircum           U+005E
+063 asciitilde            U+007E
+064 asterisk              U+002A
+065 asteriskmath          U+2217
+066 at                    U+0040
+067 Atilde                U+00C3
+068 atilde                U+00E3
+069 B                     U+0042
+070 b                     U+0062
+071 backslash             U+005C
+072 bahtthai              U+0E3F
+073 bar                   U+007C
+074 Beta                  U+0392
+075 blanksymbol           U+2422
+076 braceleft             U+007B
+077 braceright            U+007D
+078 bracketleft           U+005B
+079 bracketright          U+005D
+080 breve                 U+02D8
+081 brevebelowcmb         U+032E
+082 brevecmb              U+0306
+083 breveinvertedbelowcmb U+032F
+084 breveinvertedcmb      U+0311
+085 brokenbar             U+00A6
+086 bullet                U+2022
+087 C                     U+0043
+088 c                     U+0063
+089 Cacute                U+0106
+090 cacute                U+0107
+091 caron                 U+02C7
+092 caroncmb              U+030C
+093 Ccaron                U+010C
+094 ccaron                U+010D
+095 Ccedilla              U+00C7
+096 ccedilla              U+00E7
+097 Ccircumflex           U+0108
+098 ccircumflex           U+0109
+099 Cdotaccent            U+010A
+100 cdotaccent            U+010B
+101 cedilla               U+00B8
+102 cent                  U+00A2
+103 centigrade            U+2103
+104 Chi                   U+03A7
+105 circle                U+25CB
+106 circumflex            U+02C6
+107 circumflexcmb         U+0302
+108 colon                 U+003A
+109 colonmonetary         U+20A1
+110 comma                 U+002C
+111 copyright             U+00A9
+112 currency              U+00A4
+113 D                     U+0044
+114 d                     U+0064
+115 dagger                U+2020
+116 daggerdbl             U+2021
+117 dblverticalbar        U+2016
+118 Dcaron                U+010E
+119 dcaron                U+010F
+120 Dcroat                U+0110
+121 dcroat                U+0111
+122 Ddotbelow             U+1E0C
+123 ddotbelow             U+1E0D
+124 degree                U+00B0
+125 Delta                 U+0394
+126 dieresis              U+00A8
+127 discount              U+2052
+128 divide                U+00F7
+129 divorced              U+26AE
+130 Dlinebelow            U+1E0E
+131 dlinebelow            U+1E0F
+132 dollar                U+0024
+133 dong                  U+20AB
+134 dotaccent             U+02D9
+135 dotlessi              U+0131
+136 dotlessj              U+0237
+137 E                     U+0045
+138 e                     U+0065
+139 Eacute                U+00C9
+140 eacute                U+00E9
+141 Ebreve                U+0114
+142 ebreve                U+0115
+143 Ecaron                U+011A
+144 ecaron                U+011B
+145 Ecircumflex           U+00CA
+146 ecircumflex           U+00EA
+147 Ecircumflexacute      U+1EBE
+148 ecircumflexacute      U+1EBF
+149 Ecircumflexdotbelow   U+1EC6
+150 ecircumflexdotbelow   U+1EC7
+151 Ecircumflexgrave      U+1EC0
+152 ecircumflexgrave      U+1EC1
+153 Ecircumflexhookabove  U+1EC2
+154 ecircumflexhookabove  U+1EC3
+155 Ecircumflextilde      U+1EC4
+156 ecircumflextilde      U+1EC5
+157 Edblgrave             U+0204
+158 edblgrave             U+0205
+159 Edieresis             U+00CB
+160 edieresis             U+00EB
+161 Edotaccent            U+0116
+162 edotaccent            U+0117
+163 Edotbelow             U+1EB8
+164 edotbelow             U+1EB9
+165 Egrave                U+00C8
+166 egrave                U+00E8
+167 Ehookabove            U+1EBA
+168 ehookabove            U+1EBB
+169 eight                 U+0038
+170 ellipsis              U+2026
+171 Emacron               U+0112
+172 emacron               U+0113
+173 emdash                U+2014
+174 endash                U+2013
+175 Eng                   U+014A
+176 eng                   U+014B
+177 Eogonek               U+0118
+178 eogonek               U+0119
+179 Epsilon               U+0395
+180 equal                 U+003D
+181 Ereversed             U+018E
+182 ereversed             U+0258
+183 estimated             U+212E
+184 Eta                   U+0397
+185 Eth                   U+00D0
+186 eth                   U+00F0
+187 Etilde                U+1EBC
+188 etilde                U+1EBD
+189 eturned               U+01DD
+190 Euro                  U+20AC
+191 exclam                U+0021
+192 exclamdown            U+00A1
+193 F                     U+0046
+194 f                     U+0066
+195 f_f                   U+FB00
+196 f_f_i                 U+FB03
+197 f_f_l                 U+FB04
+198 f_i                   U+FB01
+199 f_l                   U+FB02
+200 five                  U+0035
+201 florin                U+0192
+202 four                  U+0034
+203 fraction              U+2044
+204 G                     U+0047
+205 g                     U+0067
+206 Gacute                U+01F4
+207 gacute                U+01F5
+208 Gamma                 U+0393
+209 Gbreve                U+011E
+210 gbreve                U+011F
+211 Gcaron                U+01E6
+212 gcaron                U+01E7
+213 Gcircumflex           U+011C
+214 gcircumflex           U+011D
+215 Gcommaaccent          U+0122
+216 gcommaaccent          U+0123
+217 Gdotaccent            U+0120
+218 gdotaccent            U+0121
+219 germandbls            U+00DF
+220 grave                 U+0060
+221 greater               U+003E
+222 guillemotleft         U+00AB
+223 guillemotright        U+00BB
+224 guilsinglleft         U+2039
+225 guilsinglright        U+203A
+226 H                     U+0048
+227 h                     U+0068
+228 Hbar                  U+0126
+229 hbar                  U+0127
+230 Hbrevebelow           U+1E2A
+231 hbrevebelow           U+1E2B
+232 Hcircumflex           U+0124
+233 hcircumflex           U+0125
+234 Hdieresis             U+1E26
+235 hdieresis             U+1E27
+236 Hdotbelow             U+1E24
+237 hdotbelow             U+1E25
+238 hungarumlaut          U+02DD
+239 hyphen                U+002D
+240 hyphendbl             U+2E40
+241 hyphentwo             U+2010
+242 I                     U+0049
+243 i                     U+0069
+244 I_J                   U+0132
+245 i_j                   U+0133
+246 Iacute                U+00CD
+247 iacute                U+00ED
+248 Ibreve                U+012C
+249 ibreve                U+012D
+250 Icaron                U+01CF
+251 icaron                U+01D0
+252 Icircumflex           U+00CE
+253 icircumflex           U+00EE
+254 Idblgrave             U+0208
+255 idblgrave             U+0209
+256 Idieresis             U+00CF
+257 idieresis             U+00EF
+258 Idieresisacute        U+1E2E
+259 idieresisacute        U+1E2F
+260 Idotaccent            U+0130
+261 Idotbelow             U+1ECA
+262 idotbelow             U+1ECB
+263 Igrave                U+00CC
+264 igrave                U+00EC
+265 Ihookabove            U+1EC8
+266 ihookabove            U+1EC9
+267 Imacron               U+012A
+268 imacron               U+012B
+269 infinity              U+221E
+270 Iogonek               U+012E
+271 iogonek               U+012F
+272 Iota                  U+0399
+273 Itilde                U+0128
+274 itilde                U+0129
+275 J                     U+004A
+276 j                     U+006A
+277 jcaron                U+01F0
+278 Jcircumflex           U+0134
+279 jcircumflex           U+0135
+280 K                     U+004B
+281 k                     U+006B
+282 Kappa                 U+039A
+283 Kcommaaccent          U+0136
+284 kcommaaccent          U+0137
+285 L                     U+004C
+286 l                     U+006C
+287 Lacute                U+0139
+288 lacute                U+013A
+289 Lambda                U+039B
+290 Lcaron                U+013D
+291 lcaron                U+013E
+292 Lcommaaccent          U+013B
+293 lcommaaccent          U+013C
+294 Ldot                  U+013F
+295 ldot                  U+0140
+296 Ldotbelow             U+1E36
+297 ldotbelow             U+1E37
+298 Ldotbelowmacron       U+1E38
+299 ldotbelowmacron       U+1E39
+300 less                  U+003C
+301 lira                  U+20A4
+302 logicalnot            U+00AC
+303 longs                 U+017F
+304 lowlinecmb            U+0332
+305 Lslash                U+0141
+306 lslash                U+0142
+307 M                     U+004D
+308 m                     U+006D
+309 macron                U+00AF
+310 married               U+26AD
+311 Mdotbelow             U+1E42
+312 mdotbelow             U+1E43
+313 minus                 U+2212
+314 Mu                    U+039C
+315 mu                    U+03BC
+316 multiply              U+00D7
+317 musicalnote           U+266A
+318 N                     U+004E
+319 n                     U+006E
+320 Nacute                U+0143
+321 nacute                U+0144
+322 Ncaron                U+0147
+323 ncaron                U+0148
+324 Ncommaaccent          U+0145
+325 ncommaaccent          U+0146
+326 Ndotaccent            U+1E44
+327 ndotaccent            U+1E45
+328 Ndotbelow             U+1E46
+329 ndotbelow             U+1E47
+330 nine                  U+0039
+331 Ntilde                U+00D1
+332 ntilde                U+00F1
+333 Nu                    U+039D
+334 numbersign            U+0023
+335 numero                U+2116
+336 O                     U+004F
+337 o                     U+006F
+338 Oacute                U+00D3
+339 oacute                U+00F3
+340 Obreve                U+014E
+341 obreve                U+014F
+342 Ocaron                U+01D1
+343 ocaron                U+01D2
+344 Ocircumflex           U+00D4
+345 ocircumflex           U+00F4
+346 Ocircumflexacute      U+1ED0
+347 ocircumflexacute      U+1ED1
+348 Ocircumflexdotbelow   U+1ED8
+349 ocircumflexdotbelow   U+1ED9
+350 Ocircumflexgrave      U+1ED2
+351 ocircumflexgrave      U+1ED3
+352 Ocircumflexhookabove  U+1ED4
+353 ocircumflexhookabove  U+1ED5
+354 Ocircumflextilde      U+1ED6
+355 ocircumflextilde      U+1ED7
+356 Odblgrave             U+020C
+357 odblgrave             U+020D
+358 Odieresis             U+00D6
+359 odieresis             U+00F6
+360 Odotbelow             U+1ECC
+361 odotbelow             U+1ECD
+362 OE                    U+0152
+363 oe                    U+0153
+364 ogonek                U+02DB
+365 Ograve                U+00D2
+366 ograve                U+00F2
+367 Ohookabove            U+1ECE
+368 ohookabove            U+1ECF
+369 Ohorn                 U+01A0
+370 ohorn                 U+01A1
+371 Ohornacute            U+1EDA
+372 ohornacute            U+1EDB
+373 Ohorndotbelow         U+1EE2
+374 ohorndotbelow         U+1EE3
+375 Ohorngrave            U+1EDC
+376 ohorngrave            U+1EDD
+377 Ohornhookabove        U+1EDE
+378 ohornhookabove        U+1EDF
+379 Ohorntilde            U+1EE0
+380 ohorntilde            U+1EE1
+381 Ohungarumlaut         U+0150
+382 ohungarumlaut         U+0151
+383 Omacron               U+014C
+384 omacron               U+014D
+385 Omega                 U+03A9
+386 Omicron               U+039F
+387 one                   U+0031
+388 one.superior          U+00B9
+389 onehalf               U+00BD
+390 onequarter            U+00BC
+391 Oogonek               U+01EA
+392 oogonek               U+01EB
+393 openbullet            U+25E6
+394 ordfeminine           U+00AA
+395 ordmasculine          U+00BA
+396 Oslash                U+00D8
+397 oslash                U+00F8
+398 Oslashacute           U+01FE
+399 oslashacute           U+01FF
+400 Otilde                U+00D5
+401 otilde                U+00F5
+402 P                     U+0050
+403 p                     U+0070
+404 paragraph             U+00B6
+405 parenleft             U+0028
+406 parenright            U+0029
+407 percent               U+0025
+408 period                U+002E
+409 periodcentered        U+00B7
+410 permyriad             U+2031
+411 perthousand           U+2030
+412 Phi                   U+03A6
+413 Pi                    U+03A0
+414 plus                  U+002B
+415 plusminus             U+00B1
+416 Psi                   U+03A8
+417 published             U+2117
+418 Q                     U+0051
+419 q                     U+0071
+420 question              U+003F
+421 questiondown          U+00BF
+422 quotedbl              U+0022
+423 quotedblbase          U+201E
+424 quotedblleft          U+201C
+425 quotedblright         U+201D
+426 quoteleft             U+2018
+427 quoteright            U+2019
+428 quotesinglbase        U+201A
+429 quotesingle           U+0027
+430 R                     U+0052
+431 r                     U+0072
+432 Racute                U+0154
+433 racute                U+0155
+434 radical               U+221A
+435 Rcaron                U+0158
+436 rcaron                U+0159
+437 Rcommaaccent          U+0156
+438 rcommaaccent          U+0157
+439 Rdblgrave             U+0210
+440 rdblgrave             U+0211
+441 Rdotaccent            U+1E58
+442 rdotaccent            U+1E59
+443 Rdotbelow             U+1E5A
+444 rdotbelow             U+1E5B
+445 Rdotbelowmacron       U+1E5C
+446 rdotbelowmacron       U+1E5D
+447 recipe                U+211E
+448 referencemark         U+203B
+449 registered            U+00AE
+450 Rho                   U+03A1
+451 ring                  U+02DA
+452 ringhalfleft          U+02BF
+453 ringhalfright         U+02BE
+454 S                     U+0053
+455 s                     U+0073
+456 Sacute                U+015A
+457 sacute                U+015B
+458 Scaron                U+0160
+459 scaron                U+0161
+460 Scedilla              U+015E
+461 scedilla              U+015F
+462 schwa                 U+0259
+463 Scircumflex           U+015C
+464 scircumflex           U+015D
+465 Sdotbelow             U+1E62
+466 sdotbelow             U+1E63
+467 section               U+00A7
+468 semicolon             U+003B
+469 servicemark           U+2120
+470 seven                 U+0037
+471 Sigma                 U+03A3
+472 six                   U+0036
+473 slash                 U+002F
+474 space                 U+0020
+475 sterling              U+00A3
+476 T                     U+0054
+477 t                     U+0074
+478 Tau                   U+03A4
+479 Tcaron                U+0164
+480 tcaron                U+0165
+481 Tcedilla              U+0162
+482 tcedilla              U+0163
+483 tdieresis             U+1E97
+484 Tdotbelow             U+1E6C
+485 tdotbelow             U+1E6D
+486 Theta                 U+0398
+487 Thorn                 U+00DE
+488 thorn                 U+00FE
+489 three                 U+0033
+490 three.superior        U+00B3
+491 threequarters         U+00BE
+492 tieaccentlowercase    U+0361
+493 tilde                 U+02DC
+494 tildebelowcmb         U+0330
+495 tildecmb              U+0303
+496 Tlinebelow            U+1E6E
+497 tlinebelow            U+1E6F
+498 trademark             U+2122
+499 two                   U+0032
+500 two.superior          U+00B2
+501 U                     U+0055
+502 u                     U+0075
+503 Uacute                U+00DA
+504 uacute                U+00FA
+505 Ubreve                U+016C
+506 ubreve                U+016D
+507 Ucaron                U+01D3
+508 ucaron                U+01D4
+509 Ucircumflex           U+00DB
+510 ucircumflex           U+00FB
+511 Udblgrave             U+0214
+512 udblgrave             U+0215
+513 Udieresis             U+00DC
+514 udieresis             U+00FC
+515 Udieresisacute        U+01D7
+516 udieresisacute        U+01D8
+517 Udieresiscaron        U+01D9
+518 udieresiscaron        U+01DA
+519 Udieresisgrave        U+01DB
+520 udieresisgrave        U+01DC
+521 Udotbelow             U+1EE4
+522 udotbelow             U+1EE5
+523 Ugrave                U+00D9
+524 ugrave                U+00F9
+525 Uhookabove            U+1EE6
+526 uhookabove            U+1EE7
+527 Uhorn                 U+01AF
+528 uhorn                 U+01B0
+529 Uhornacute            U+1EE8
+530 uhornacute            U+1EE9
+531 Uhorndotbelow         U+1EF0
+532 uhorndotbelow         U+1EF1
+533 Uhorngrave            U+1EEA
+534 uhorngrave            U+1EEB
+535 Uhornhookabove        U+1EEC
+536 uhornhookabove        U+1EED
+537 Uhorntilde            U+1EEE
+538 uhorntilde            U+1EEF
+539 Uhungarumlaut         U+0170
+540 uhungarumlaut         U+0171
+541 Umacron               U+016A
+542 umacron               U+016B
+543 underscore            U+005F
+544 uni00A0               U+00A0
+545 uni00AD               U+00AD
+546 uni0218               U+0218
+547 uni0219               U+0219
+548 uni021A               U+021A
+549 uni021B               U+021B
+550 uni0300               U+0300
+551 uni0301               U+0301
+552 uni0304               U+0304
+553 uni0307               U+0307
+554 uni0308               U+0308
+555 uni0309               U+0309
+556 uni030A               U+030A
+557 uni030B               U+030B
+558 uni030F               U+030F
+559 uni0323               U+0323
+560 uni0326               U+0326
+561 uni0331               U+0331
+562 uni2011               U+2011
+563 uni203D               U+203D
+564 uni203F               U+203F
+565 uni2040               U+2040
+566 uni2045               U+2045
+567 uni2046               U+2046
+568 uni2054               U+2054
+569 uni20A6               U+20A6
+570 uni20B1               U+20B1
+571 uni20B2               U+20B2
+572 uni2126               U+2126
+573 uni2127               U+2127
+574 uni2222               U+2222
+575 uni2300               U+2300
+576 uni2423               U+2423
+577 uni27E6               U+27E6
+578 uni27E7               U+27E7
+579 uni2E18               U+2E18
+580 Uogonek               U+0172
+581 uogonek               U+0173
+582 Upsilon               U+03A5
+583 Uring                 U+016E
+584 uring                 U+016F
+585 Utilde                U+0168
+586 utilde                U+0169
+587 V                     U+0056
+588 v                     U+0076
+589 W                     U+0057
+590 w                     U+0077
+591 Wacute                U+1E82
+592 wacute                U+1E83
+593 Wcircumflex           U+0174
+594 wcircumflex           U+0175
+595 Wdieresis             U+1E84
+596 wdieresis             U+1E85
+597 Wgrave                U+1E80
+598 wgrave                U+1E81
+599 won                   U+20A9
+600 X                     U+0058
+601 x                     U+0078
+602 Xi                    U+039E
+603 Y                     U+0059
+604 y                     U+0079
+605 Yacute                U+00DD
+606 yacute                U+00FD
+607 Ycircumflex           U+0176
+608 ycircumflex           U+0177
+609 Ydieresis             U+0178
+610 ydieresis             U+00FF
+611 Ydotbelow             U+1EF4
+612 ydotbelow             U+1EF5
+613 yen                   U+00A5
+614 Ygrave                U+1EF2
+615 ygrave                U+1EF3
+616 Yhookabove            U+1EF6
+617 yhookabove            U+1EF7
+618 Ytilde                U+1EF8
+619 ytilde                U+1EF9
+620 Z                     U+005A
+621 z                     U+007A
+622 Zacute                U+0179
+623 zacute                U+017A
+624 Zcaron                U+017D
+625 zcaron                U+017E
+626 Zdotaccent            U+017B
+627 zdotaccent            U+017C
+628 Zdotbelow             U+1E92
+629 zdotbelow             U+1E93
+630 zero                  U+0030
+631 Zeta                  U+0396
+
+============================================
+III. DIFFERENCES IN THE REPERTOIRE OF GLYPHS
+============================================
+
+LAYOUT 1 (825)
+lmssq8 lmssqbo8 lmssqbx8 lmssqo8
+   Extra glyphs: I.alt I_J.alt Iogonek.alt
+
+LAYOUT 2 (822; basic)
+lmb10 lmbo10 lmbx10 lmbx12 lmbx5 lmbx6 lmbx7 lmbx8 lmbx9 lmbxi10 lmbxo10
+lmdunh10 lmduno10 lmr10 lmr12 lmr17 lmr5 lmr6 lmr7 lmr8 lmr9 lmri10 lmri12
+lmri7 lmri8 lmri9 lmro10 lmro12 lmro17 lmro8 lmro9 lmss10 lmss12 lmss17
+lmss8 lmss9 lmssbo10 lmssbx10 lmssdc10 lmssdo10 lmsso10 lmsso12 lmsso17
+lmsso8 lmsso9 lmu10 lmvtk10 lmvtko10 lmvtl10 lmvtlo10 lmvtt10 lmvtto10
+
+LAYOUT 3 (815)
+lmcsc10 lmcsco10
+   Missing glyphs: f_f f_f_i f_f_l f_i f_k f_l longs
+
+LAYOUT 4 (786)
+lmtk10 lmtko10 lmtl10 lmtlc10 lmtlco10 lmtlo10 lmtt10 lmtt12 lmtt8 lmtt9
+lmtti10 lmtto10
+   Missing glyphs: copyright.bas eight.oldstyle eight.prop f_f f_f_i f_f_l f_i f_k f_l five.oldstyle
+   five.prop four.oldstyle four.prop hyphen.prop I_J i_j nine.oldstyle nine.prop one.oldstyle
+   one.prop permyriad registered.bas S_S servicemark seven.oldstyle seven.prop six.oldstyle six.prop
+   suppress three.oldstyle three.prop trademark two.oldstyle two.prop zero.oldstyle zero.prop
+
+LAYOUT 5 (785) -- , except for longs)
+lmtcsc10 lmtcso10
+   Missing glyphs: the same as in LAYOUT 4 and, moreover, longs is missing
+
+=============================
+IV. GROUPING INTO SUBFAMILIES
+=============================
+
+In the computing world, fonts are most commonly grouped into four variants — regular, italic or
+oblique, bold, and bold italic or oblique — although in practice some families have fewer
+variants. The grouping of the Latin Modern fonts into such sets is not straightforward. When
+changing the font generation software for GUST e-Foundry, we decided to revise the grouping and
+define 33 subfamilies of 1-, 2-, 3-, and 4-member sets.
+
+1. 1-member families
+LMMono8-Regular
+LMMono9-Regular
+LMMono12-Regular
+LMMonoSlant10-Regular
+LMRomanSlant12-Regular
+LMRomanSlant8-Regular
+LMRomanSlant9-Regular
+LMRomanUnsl10-Regular
+
+2. 2-member families
+LMMono10-Regular         LMMono10-Italic          
+LMMonoCaps10-Regular     LMMonoCaps10-Oblique     
+LMMonoLtCond10-Regular   LMMonoLtCond10-Oblique   
+LMMonoProp10-Regular     LMMonoProp10-Oblique     
+LMRoman5-Regular         LMRoman5-Bold            
+LMRoman6-Regular         LMRoman6-Bold            
+LMRoman17-Regular        LMRoman17-Oblique        
+LMRomanCaps10-Regular    LMRomanCaps10-Oblique    
+LMRomanDemi10-Regular    LMRomanDemi10-Oblique    
+LMRomanDunh10-Regular    LMRomanDunh10-Oblique    
+LMRomanSlant10-Regular   LMRomanSlant10-Bold      
+LMSans8-Regular          LMSans8-Oblique          
+LMSans9-Regular          LMSans9-Oblique          
+LMSans12-Regular         LMSans12-Oblique         
+LMSans17-Regular         LMSans17-Oblique         
+LMSansDemiCond10-Regular LMSansDemiCond10-Oblique 
+
+3. 3-member families
+LMRoman7-Regular         LMRoman7-Italic     LMRoman7-Bold                   
+LMRoman8-Regular         LMRoman8-Italic     LMRoman8-Bold                   
+LMRoman9-Regular         LMRoman9-Italic     LMRoman9-Bold                   
+LMRoman12-Regular        LMRoman12-Italic    LMRoman12-Bold        
+
+4. 4-member families
+LMMonoLt10-Regular       LMMonoLt10-Bold     LMMonoLt10-Oblique     LMMonoLt10-BoldOblique     
+LMMonoPropLt10-Regular   LMMonoPropLt10-Bold LMMonoPropLt10-Oblique LMMonoPropLt10-BoldOblique 
+LMRoman10-Regular        LMRoman10-Bold      LMRoman10-Italic       LMRoman10-BoldItalic       
+LMSans10-Regular         LMSans10-Bold       LMSans10-Oblique       LMSans10-BoldOblique       
+LMSansQuot8-Regular      LMSansQuot8-Bold    LMSansQuot8-Oblique    LMSansQuot8-BoldOblique    
+
