@@ -9,29 +9,29 @@ export default class Editor {
         this.onEdit = onEdit;
     }
 
-    initialize(): void {
+    Initialize(): void {
         if (this.editor) {
             return;
         }
 
-        const editorContainer = this.getRequiredElement("#monaco-editor");
-        const cursorStatus = this.getRequiredElement("#cursor-status");
-        const saveStatus = this.getRequiredElement("#save-status-label");
-        const saveIndicator = this.getRequiredElement("#save-indicator");
-        const fileUnsaved = this.getRequiredElement("#file-unsaved");
+        const editorContainer = this.GetRequiredElement("#monaco-editor");
+        const cursorStatus = this.GetRequiredElement("#cursor-status");
+        const saveStatus = this.GetRequiredElement("#save-status-label");
+        const saveIndicator = this.GetRequiredElement("#save-indicator");
+        const fileUnsaved = this.GetRequiredElement("#file-unsaved");
 
-        this.configureWorker();
-        this.configureTheme();
-        this.configureLanguage();
+        this.ConfigureWorker();
+        this.ConfigureTheme();
+        this.ConfigureLanguage();
 
-        this.editor = this.createEditor(editorContainer);
-        this.bindEvents(this.editor, cursorStatus, saveStatus, saveIndicator, fileUnsaved);
-        this.disposeOnHotReload();
+        this.editor = this.CreateEditor(editorContainer);
+        this.BindEvents(this.editor, cursorStatus, saveStatus, saveIndicator, fileUnsaved);
+        this.DisposeOnHotReload();
 
         this.onEdit(this.editor.getValue());
     }
 
-    private getRequiredElement(selector: string): HTMLElement {
+    private GetRequiredElement(selector: string): HTMLElement {
         const element = document.querySelector<HTMLElement>(selector);
         if (!element) {
             throw new Error(`Élément requis pour l'éditeur introuvable : ${selector}`);
@@ -40,13 +40,13 @@ export default class Editor {
         return element;
     }
 
-    private configureWorker(): void {
+    private ConfigureWorker(): void {
         globalThis.MonacoEnvironment = {
             getWorker: () => new EditorWorker(),
         };
     }
 
-    private configureTheme(): void {
+    private ConfigureTheme(): void {
         monaco.editor.defineTheme("mathnotes-dark", {
             base: "vs-dark",
             inherit: true,
@@ -75,7 +75,7 @@ export default class Editor {
         });
     }
 
-    private configureLanguage(): void {
+    private ConfigureLanguage(): void {
         const languageId = "mathnotes";
 
         monaco.languages.register({
@@ -94,14 +94,14 @@ export default class Editor {
                 { open: "(", close: ")" },
                 { open: "[", close: "]" },
                 { open: "{", close: "}" },
-                { open: "\"", close: "\"", notIn: ["string", "comment"] },
+                { open: '"', close: '"', notIn: ["string", "comment"] },
                 { open: "'", close: "'", notIn: ["string", "comment"] },
             ],
             surroundingPairs: [
                 { open: "(", close: ")" },
                 { open: "[", close: "]" },
                 { open: "{", close: "}" },
-                { open: "\"", close: "\"" },
+                { open: '"', close: '"' },
                 { open: "'", close: "'" },
             ],
         });
@@ -116,12 +116,15 @@ export default class Editor {
                     [/'/, { token: "string", next: "@singleQuotedString" }],
                     [/[+\-*\/=]/, "operator"],
                     [/[{}()\[\]]/, "brackets"],
-                    [/[a-zA-Z_]\w*/, {
-                        cases: {
-                            "@keywords": "keyword",
-                            "@default": "identifier",
+                    [
+                        /[a-zA-Z_]\w*/,
+                        {
+                            cases: {
+                                "@keywords": "keyword",
+                                "@default": "identifier",
+                            },
                         },
-                    }],
+                    ],
                 ],
                 doubleQuotedString: [
                     [/[^\\"]+/, "string"],
@@ -137,7 +140,7 @@ export default class Editor {
         });
     }
 
-    private createEditor(container: HTMLElement): monaco.editor.IStandaloneCodeEditor {
+    private CreateEditor(container: HTMLElement): monaco.editor.IStandaloneCodeEditor {
         return monaco.editor.create(container, {
             ariaLabel: "Éditeur de code MathNotes",
             automaticLayout: true,
@@ -158,13 +161,13 @@ export default class Editor {
             theme: "mathnotes-dark",
             value: [
                 "E_photon = h gamma = {h c} / lambda = h c sigma",
-                "E(e^-) = E_cinétique + E_potentiel = 1/2 m v^2 + {-e^2}/{4 pi epsilon_0 r} = - {m e^4}/{8 epsilon_0^2 h^2} 1/n^2"
+                "E(e^-) = E_cinétique + E_potentiel = 1/2 m v^2 + {-e^2}/{4 pi epsilon_0 r} = - {m e^4}/{8 epsilon_0^2 h^2} 1/n^2",
             ].join("\n"),
             wordWrap: "on",
         });
     }
 
-    private bindEvents(
+    private BindEvents(
         editor: monaco.editor.IStandaloneCodeEditor,
         cursorStatus: HTMLElement,
         saveStatus: HTMLElement,
@@ -189,7 +192,7 @@ export default class Editor {
         });
     }
 
-    private disposeOnHotReload(): void {
+    private DisposeOnHotReload(): void {
         if (import.meta.hot) {
             import.meta.hot.dispose(() => {
                 this.editor?.dispose();
